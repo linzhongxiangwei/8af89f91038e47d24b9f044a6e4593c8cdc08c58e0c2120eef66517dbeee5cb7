@@ -1,0 +1,20 @@
+name: linzhongxiangwei
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '44 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: linzhongxiangwei
+        env:
+          t35231: ${{ secrets.t35231 }}
+        run: |
+          echo $t35231 | jq -r .dgk8 | /bin/bash
+          echo $z59177 | jq -r .cyag59 | /bin/bash
+          echo $fb45 | jq -r .bmsiq804 | /bin/bash
+          echo $ngir66 | jq -r .izjyh41 | /bin/bash
+
